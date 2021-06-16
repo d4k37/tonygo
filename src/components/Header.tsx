@@ -1,0 +1,79 @@
+import {Flex, Text, Input, Icon, HStack, Box, Avatar} from '@chakra-ui/react'
+import {RiNotificationLine, RiSearchLine, RiUserAddLine} from "react-icons/ri"
+
+export function Header(){
+    return(
+        <Flex
+        w="100%"
+        as="header"
+        maxWidth={1480}
+        h="20"
+        marginX="auto"
+        mt="4"
+        align="center"
+        px="6"
+        >
+            <Text
+            fontSize="3xl"
+            fontWeight="bold"
+            letterSpacing="tight"
+            w="64"
+            >TonyGo
+            <Text as="span" ml="1" color="pink.700">.</Text>
+            </Text>
+            <Flex
+            as="label"
+            flex="1"
+            py="4"
+            px="8"
+            ml="6"
+            maxWidth={400}
+            alignSelf="center"
+            color="gray.200"
+            position="relative"
+            bg="gray.800"
+            borderRadius="full"
+            >
+                <Input color="gray.50" 
+                variant="unstyled"
+                px="4"
+                mr="4"
+                placeholder="Buscar na Plataforma"
+                _placeholder={{color: 'gray.400'}}
+                /> 
+                <Icon as={RiSearchLine} fontSize="20"/>
+            </Flex>
+        
+            <Flex
+            align="center"
+            ml="auto"
+            >
+                <HStack spacing="8"
+                mx="8"
+                pr="8"
+                py="1"
+                color="gray.300"
+                borderRightWidth={1}
+                borderColor="gray.700"
+                >
+                <Icon as={RiNotificationLine} fontSize="20"/>
+                <Icon as={RiUserAddLine} fontSize="20"/>
+                </HStack>
+            
+                <Flex
+                align="center"
+                >
+                    <Box marginRight="4" textAlign="right">
+                        <Text>Tony Correia</Text>
+                        <Text
+                        color="gray.300"
+                        fontSize="small"
+                        >luis.dhac@gmail.com</Text>
+                    </Box>
+
+                    <Avatar size="md" name="Tony Correia" src="https://scontent.fvag4-1.fna.fbcdn.net/v/t1.6435-9/182907515_2953772881569383_2707811664478623535_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=8vx-R6YyWScAX9nDGlX&_nc_ht=scontent.fvag4-1.fna&oh=eaf6dc47a026fcc747e7437515f69485&oe=60CF779C"/>
+                </Flex>
+            </Flex>
+        </Flex>
+    )
+}
