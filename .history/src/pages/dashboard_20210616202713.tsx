@@ -1,7 +1,7 @@
 import { Header } from "../components/Header";
 import dynamic from 'next/dynamic'
 import {Flex, SimpleGrid, Box, Text, theme} from "@chakra-ui/react"
-import { Sidebar } from "../components/Sidebar";
+import { Sidebar } from "../components/Form/Sidebar";
 
 
 const Chart = dynamic(()=> import('react-apexcharts'), {
@@ -27,7 +27,7 @@ const options ={
         enabled:false,
     },
     xaxis:{
-        type:'datetime',
+        type:datetime,
         axisBorder:{
             color: theme.colors.gray[600]
         },
