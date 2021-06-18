@@ -32,7 +32,7 @@ export default function UserList(){
                 <Flex mp="8" justify="space-between" align="center">
                     <Heading size="lg" fontWeight="normal">Usuários</Heading>
 
-                    <Button href="/users/create" p="4" as="a" size="small" fontSize="sm" colorScheme="pink" leftIcon={<Icon as={RiAddLine}/>}>Criar Novo</Button>
+                    <Button p="4" as="a" size="small" fontSize="sm" colorScheme="pink" leftIcon={<Icon as={RiAddLine}/>}>Criar Novo</Button>
                 </Flex>
             
             <Table colorScheme="whiteAlpha">

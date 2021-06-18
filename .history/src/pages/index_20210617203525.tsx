@@ -11,10 +11,10 @@ type SignInFormData = {
 
 export default function SignIn() {
 
-  const {register, handleSubmit,}= useForm()
+  const {register, handleSubmit}= useForm()
 
   const handleSignIn: SubmitHandler<SignInFormData> = (values)=>{
-   
+    console.log(values);
   }
 
   return (
